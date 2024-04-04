@@ -13,11 +13,11 @@
 <div bind:clientHeight={svhHeight} class="sizer svh" />
 
 <div style:position="fixed" style:left="0" style:top="0">
-  <p>100% = {percentHeigt}</p>
-  <p>100vh = {vhHeight}</p>
-  <p>100dvh = {dvhHeight}</p>
-  <p>100lvh = {lvhHeight}</p>
-  <p>100svh = {svhHeight}</p>
+  <p>100% = {percentHeigt}px</p>
+  <p>100vh = {vhHeight}px</p>
+  <p>100dvh = {dvhHeight}px</p>
+  <p>100lvh = {lvhHeight}px</p>
+  <p>100svh = {svhHeight}px</p>
 </div>
 
 <style>
