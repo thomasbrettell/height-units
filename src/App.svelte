@@ -5,9 +5,13 @@
   let lvhHeight;
   let svhHeight;
   let windowInnerHeight;
+  let windowOuterHeight;
 </script>
 
-<svelte:window bind:innerHeight={windowInnerHeight} />
+<svelte:window
+  bind:innerHeight={windowInnerHeight}
+  bind:outerHeight={windowOuterHeight}
+/>
 
 <div bind:clientHeight={percentHeigt} class="sizer percent" />
 <div bind:clientHeight={vhHeight} class="sizer vh" />
@@ -22,6 +26,7 @@
   <p>100lvh = {lvhHeight}px</p>
   <p>100svh = {svhHeight}px</p>
   <p>window.innerHeight = {windowInnerHeight}px</p>
+  <p>window.outerHeight = {windowOuterHeight}px</p>
 </div>
 
 <style>
